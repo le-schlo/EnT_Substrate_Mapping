@@ -5,7 +5,7 @@ This repository contains the code for the creation and prediction of the virtual
 ## Installation
 For installation run
 ```
-git clone --recurse-submodules https://github.com/le-schlo/EnTdecker.git
+git clone --recurse-submodules https://github.com/le-schlo/EnT_Substrate_Mapping.git
 # option --recurse-submodules is required in order to clone the respective submodules
 
 pip install -r requirements.txt
