@@ -12,4 +12,4 @@
 [submodule "EnTdecker/EasyChemML"]
 	path = EnTdecker/EasyChemML
 	url = https://github.com/le-schlo/EasyChemML.git
-	branch = EnTdecker
+	branch = SubstrateMapper
