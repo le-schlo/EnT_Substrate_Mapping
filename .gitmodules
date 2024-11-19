@@ -1,0 +1,3 @@
+[submodule "EnTdecker"]
+	path = EnTdecker
+	url = https://github.com/le-schlo/EnTdecker.git
