@@ -57,6 +57,39 @@ def combine_with_heterocycle(fg: str,
 
     return list_of_combinations
 
+def create_space(fg: List[str],
+                 heterocycle_smi: str,
+                 heterocycle_smarts: str,
+                 num_iterations: int = 1,
+                 keep_all: bool = False
+                 ) -> List[str]:
+    '''
+    Create a combinatorial space by combining a list of functional groups with a heterocycle
+
+    :param fg: List of SMILES of functional groups
+    :param heterocycle_smi: SMILES of heterocycle
+    :param heterocycle_smarts: SMARTS of heterocycle
+    :param num_iterations: Number of iterations to combine the functional groups with the heterocycle. Corresponds to mono-, di-, tri- substituted molecules
+    :param keep_all: If True, all generated molecules (e.g., monosubstituted and disusbstituted molecules) are kept, if False, only molecules o last iteration (e.g., disubstituted) are kept
+    :return: List of combined molecules in SMILES format
+    '''
+
+    generated_molecules = []
+    for i in fg:
+        generated_molecules.extend(combine_with_heterocycle(i, heterocycle_smi, heterocycle_smarts))
+
+    unique_molecules = list(set(generated_molecules))
+
+    for i in range(num_iterations - 1):
+        if not keep_all:
+            generated_molecules = []
+        for smi in unique_molecules:
+            for i in fg:
+                generated_molecules.extend(
+                    combine_with_heterocycle(i, heterocycle_smi=smi, heterocycle_smarts=heterocycle_smarts))
+        unique_molecules = list(set(generated_molecules))
+
+    return unique_molecules
 def encode_mono_substitution_azoles(mol,
                                     patterns: List[str]
                                     ) -> List[int]:
