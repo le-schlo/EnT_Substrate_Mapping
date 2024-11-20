@@ -1,6 +1,7 @@
 from CombinatorialSpace.help_to_combine import get_functional_groups, create_space
 
-functional_groups = get_functional_groups('functional_groups.txt')
+path_to_fg_list = 'CombinatorialSpace/functional_groups.txt'
+functional_groups = get_functional_groups(path_to_fg_list)
 
 ##Example Skipt to generate monosubstituted Thiophenes
 smiles = 'C1=CC=CS1'
