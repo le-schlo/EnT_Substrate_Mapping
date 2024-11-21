@@ -8,7 +8,7 @@ from rdkit.Chem import Draw
 
 
 
-home_dir = '/tmp/EnT_Substrate_Mapping/'
+home_dir = '/path/to/project_directory/'
 ring_class = 'thiophene'
 substitution = 'monosubstituted'
 type_of_image = 'structure' # Options are structure or 'spin_population'
