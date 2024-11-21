@@ -29,7 +29,7 @@ A typical workflow would involve the following steps:
    - Save your virtual library as a `.csv` file to the `Data/virtual_libraries` directory. The naming convention should be `mol_substitution.csv`. Where `mol` is the name of the core molecule (e.g., thiophene) and `substitution` is the degree of substitution (e.g., monosubstituted).
    <br/><br/>
 2. Obtain predictions: `examples/predict_et.py` and `examples/predict_sp.py`:
-   - Download the pre-trained EnTdecker models from the [Zenodo](https://zenodo.org/records/10391170) repository and place them in the respective directories in the `Predictors` directory.
+   - Download the pre-trained EnTdecker models from the [Zenodo](https://zenodo.org/records/10391170) repository and place them in the respective directories in the `Models` directory.
    - Alternatively you can also train / retrain your own models. For this please refer to the instructions in the [EnTdecker](https://github.com/le-schlo/EnTdecker) repository.
    - Run the scripts for prediction. The predictions should be save to `Data/et_predictions/predictions_mol_substitution.csv` for triplet energy prediction and `Data/sp_predictions/predictions_mol_substitution.csv` for spn population prediction.
    <br/><br/>
