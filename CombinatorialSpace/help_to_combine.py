@@ -90,19 +90,21 @@ def create_space(fg: List[str],
         unique_molecules = list(set(generated_molecules))
 
     return unique_molecules
-def encode_mono_substitution_azoles(mol,
-                                    patterns: List[str]
+def encode_mono_substitution_azoles(smi: str,
+                                    patterns: List[str] = ['n1[cH][cH][s,o,nH]c1',
+                                                           'n1c[cH][s,o,nH][cH]1',
+                                                           'n1[cH]c[s,o,nH][cH]1']
                                     ) -> List[int]:
     '''
-    Given a MOL, return a list of 3 elements, where each element is 1 if the substitution is present, 0 otherwise
+    Given a SMILES, return a list of 3 elements, where each element is 1 if the substitution is present, 0 otherwise
 
     order corresponds to carbons of thiazole: s1 c2 n3 c4 c5 [c2, c4, c5]
 
-    :param mol: MOL object
+    :param str: SMILES of molecule
     :param patterns: list of SMARTS patterns for the different substitution patterns
     :return: list of one hot encoded position of substitution
     '''
-
+    mol = Chem.MolFromSmiles(smi)
     mono_2 = Chem.MolFromSmarts(patterns[0])
     mono_4 = Chem.MolFromSmarts(patterns[1])
     mono_5 = Chem.MolFromSmarts(patterns[2])
@@ -115,22 +117,25 @@ def encode_mono_substitution_azoles(mol,
         substitution = [0,0,1]
 
     else:
-        substitution = [1,1,1]
+        raise ValueError('No substitution found. Only monosubstituted molecules are supported')
 
     return substitution
 
 
-def encode_mono_substitution_monocycles(mol,
-                                    patterns: List[str]
+def encode_mono_substitution_monoheterocycles(smi: str,
+                                    patterns: List[str] = ['[o,s,n]1c[cH][cH][cH]1',
+                                                           '[o,s,n]1[cH]c[cH][cH]1']
                                     ) -> List[int]:
     '''
-    Given a MOL, return a list of 3 elements, where each element is 1 if the substitution is present, 0 otherwise
+    Given a SMILES, return a list of 3 elements, where each element is 1 if the substitution is present, 0 otherwise
 
-    :param mol: MOL object
+    order corresponds to carbons of heterocycle, e.g., thiophene: s1 c2 c3 c4 c5 [c2, c3]
+
+    :param smi: Smiles of molecule
     :param patterns: list of SMARTS patterns for the different substitution patterns
     :return: list of one hot encoded position of substitution
     '''
-
+    mol = Chem.MolFromSmiles(smi)
     mono_2 = Chem.MolFromSmarts(patterns[0])
     mono_3 = Chem.MolFromSmarts(patterns[1])
 
@@ -138,10 +143,8 @@ def encode_mono_substitution_monocycles(mol,
         substitution = [1, 0]
     elif mol.HasSubstructMatch(mono_3):
         substitution = [0, 1]
-
     else:
-        substitution = [1, 1]
-
+        raise ValueError('No substitution found. Only monosubstituted molecules are supported')
     return substitution
 
 
