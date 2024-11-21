@@ -18,11 +18,11 @@ ring_class = 'thiophene'
 substitution = 'monosubstituted'
 representation = 'MACCS+ECFP'
 
-home_dir = r'C:\Users\leons\PycharmProjects\EnT_Substrate_Mapping'
+home_dir = '/path/to/project_directory/'
 
-picFolder_path = home_dir + rf'\Data\images' #Important: The names of the files in the folder must be the index of the molecules in the data_path!
-data_path = home_dir + fr'\Data\virtual_libraries\{ring_class}_{substitution}.csv'
-e_t_path = home_dir + fr'\Data\et_predictions\predictions_{ring_class}_{substitution}.csv'
+picFolder_path = home_dir + 'Data/images' #Important: The names of the files in the folder must be the index of the molecules in the data_path!
+data_path = home_dir + f'Data/virtual_libraries/{ring_class}_{substitution}.csv'
+e_t_path = home_dir + f'Data/et_predictions/predictions_{ring_class}_{substitution}.csv'
 
 #--------------Load the data, compute representation and reduce dimensionality-------------------#
 
