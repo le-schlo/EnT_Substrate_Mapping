@@ -30,7 +30,7 @@ A typical workflow would involve the following steps:
 2. Obtain predictions: `examples/predict_et.py` and `examples/predict_sp.py`:
    - Download the pre-trained EnTdecker models from the [Zenodo](https://zenodo.org/records/10391170) repository and place them in the respective directories in the `Models` directory.
    - Alternatively you can also train / retrain your own models. For this please refer to the instructions in the [EnTdecker](https://github.com/le-schlo/EnTdecker) repository.
-   - Run the scripts for prediction. The predictions should be save to `Data/et_predictions/predictions_mol_substitution.csv` for triplet energy prediction and `Data/sp_predictions/predictions_mol_substitution.csv` for spn population prediction.
+   - Run the scripts for prediction. The predictions should be saved to `Data/et_predictions/predictions_mol_substitution.csv` for triplet energy prediction and `Data/sp_predictions/predictions_mol_substitution.csv` for spin population prediction.
    <br/><br/>
 3. Create images for the interactive analysis (Optional): `examples/image_creation.py`
    - This script will create images. The user has two options controllable with the `type_of_image` variable
