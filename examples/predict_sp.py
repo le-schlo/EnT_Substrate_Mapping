@@ -14,7 +14,6 @@ from rdkit import Chem
 home_dir = '/path/to/project_directory/'
 ring_class = 'thiophene'
 substitution = 'monosubstituted'
-heterocycle_pattern = Chem.MolFromSmiles('s1cccc1')
 
 file_path = home_dir + f'Data/virtual_libraries/{ring_class}_{substitution}.csv'
 path_to_model = home_dir + 'Models/spin_population/spin_population.pt'
@@ -51,13 +50,10 @@ tokenizer.convert(datatable=bp['data'], columns=['smiles'], n_jobs=4)
 # ----------------------------------- Evaluation -----------------------
 
 batch_size = 25
-print_every = 1
 decoding_strategy = 'greedy'
 
 s = SmilesTokenzier()
 final_df=pd.DataFrame(data=None)
-
-total_loss = 0
 
 start_mol = 0
 iter_steps = 0
@@ -65,9 +61,9 @@ iter_steps = 0
 start = time.time()
 temp = start
 
-iteration_per_chunk = val_data_size / batch_size
+iteration_per_chunk = int(val_data_size / batch_size)
 
-for verbose, i in enumerate(range(int(iteration_per_chunk))):
+for verbose, i in enumerate(range(int(iteration_per_chunk)+1)):
 
     end_mol = start_mol + batch_size
 
@@ -83,6 +79,7 @@ for verbose, i in enumerate(range(int(iteration_per_chunk))):
     outputs = model_eval.outputs
     start_mol = end_mol
     iter_steps += 1
+    finished = False
 
     if decoding_strategy == 'beam_search':
         num_beams = 5
@@ -93,15 +90,7 @@ for verbose, i in enumerate(range(int(iteration_per_chunk))):
         for beam in range(num_beams):
             counter = (example * num_beams) + beam
             pred_smi, pred_SD_string, DensityArray = s.getSmilesfromoutputwithSD(outputs[counter])
-            thiazol_SD = []
-            functionalized_thiazol = Chem.MolFromSmiles(str(true_smi[example].decode("utf-8")))
-            hit_ats = list(functionalized_thiazol.GetSubstructMatch(heterocycle_pattern))
-            for atom in hit_ats:
-                try:
-                    thiazol_SD.append(DensityArray[atom])
-                except:
-                    thiazol_SD.append(0)
-
+            
             df_example = pd.DataFrame({})
             df_example['Predicted_smiles'] = [pred_smi]
             df_example['Predicted_SD_string'] = [pred_SD_string]
@@ -109,21 +98,18 @@ for verbose, i in enumerate(range(int(iteration_per_chunk))):
             df_example['True_smiles'] = [true_smi[example].decode("utf-8")]
 
             if pred_smi == str(true_smi[example].decode("utf-8")):
-                df_example['s_1'] = [thiazol_SD[0]]
-                df_example['c_2'] = [thiazol_SD[1]]
-                df_example['c_3'] = [thiazol_SD[2]]
-                df_example['c_4'] = [thiazol_SD[3]]
-                df_example['c_5'] = [thiazol_SD[4]]
                 df_example['Reconstrunction_error'] = [0]
             else:
-                df_example['s_1']= [None]
-                df_example['c_2']= [None]
-                df_example['c_3']= [None]
-                df_example['c_4']= [None]
-                df_example['c_5']= [None]
                 df_example['Reconstrunction_error'] = [1]
 
             final_df = pd.concat([final_df, df_example])
+            if ((i*batch_size) + example+1) == val_data_size:
+                finished = True
+                break
+
+        if finished:
+            break
+    
     print('----------------------------------')
     print(f'Done with {verbose+1} / {iteration_per_chunk} chunks')
 
