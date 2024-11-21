@@ -1,11 +1,11 @@
 import contextlib
 import chemprop
 
-home_dir = '/tmp/EnT_Substrate_Mapping/'
+home_dir = '/path/to/project_directory/'
 ring_class = 'thiophene'
 substitution = 'monosubstituted'
 
-path_to_model = home_dir + 'Predictors/triplet_energy/triplet_energy.pt'
+path_to_model = home_dir + 'Models/triplet_energy/triplet_energy.pt'
 path_to_molecules = home_dir + f'Data/virtual_libraries/{ring_class}_{substitution}.csv'
 path_for_predictions = home_dir + f'Data/et_predictions/predictions_{ring_class}_{substitution}.csv'
 
