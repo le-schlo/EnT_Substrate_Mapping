@@ -1,7 +1,10 @@
-from CombinatorialSpace.help_to_combine import get_functional_groups, create_space
+import sys
 import pandas as pd
 
-home_dir = r'C:\Users\leons\PycharmProjects\EnT_Substrate_Mapping\\'
+home_dir = r'/path/to/project_directory/' #Change this to the directory your project is located at.
+sys.path.append(home_dir) #Add the directory to your pythonpath, so that the functions from Combinatorial.help_to_combine can be imported.
+
+from CombinatorialSpace.help_to_combine import get_functional_groups, create_space
 
 path_to_fg_list = home_dir + 'CombinatorialSpace/functional_groups.txt'
 functional_groups = get_functional_groups(path_to_fg_list)
