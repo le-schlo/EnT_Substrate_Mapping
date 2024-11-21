@@ -2,7 +2,7 @@ import contextlib
 import chemprop
 
 home_dir = '/tmp/EnT_Substrate_Mapping/'
-ring_class = 'furan'
+ring_class = 'thiophene'
 substitution = 'monosubstituted'
 
 path_to_model = home_dir + 'Predictors/triplet_energy/triplet_energy.pt'

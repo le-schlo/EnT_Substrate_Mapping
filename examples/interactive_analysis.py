@@ -15,7 +15,7 @@ from dash import dcc
 #--------------Define which data shall be visualised and set the corresponding paths-------------------#
 
 ring_class = 'thiophene'
-substitution = 'disubstituted'
+substitution = 'monosubstituted'
 representation = 'MACCS+ECFP'
 
 home_dir = r'C:\Users\leons\PycharmProjects\EnT_Substrate_Mapping'

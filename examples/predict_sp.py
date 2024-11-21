@@ -12,7 +12,7 @@ from EasyChemML.Model.impl_Pytorch.Models.BERT.FP2MOL_BERT_Trans import FP2MOL_B
 from rdkit import Chem
 
 home_dir = '/tmp/EnT_Substrate_Mapping/'
-ring_class = 'furan'
+ring_class = 'thiophene'
 substitution = 'monosubstituted'
 heterocycle_pattern = Chem.MolFromSmiles('o1cccc1')
 

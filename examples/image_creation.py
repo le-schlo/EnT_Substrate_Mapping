@@ -9,8 +9,8 @@ from rdkit.Chem import Draw
 
 
 home_dir = '/tmp/EnT_Substrate_Mapping/'
-ring_class = 'furan'
-substitution = 'disubstituted'
+ring_class = 'thiophene'
+substitution = 'monosubstituted'
 type_of_image = 'structure' # Options are structure or 'spin_population'
                             # Caveat of spin_population is that the memory for the generation for the images can overflow and crash the script.
                             # In this case the script needs to be run in smaller batches.
