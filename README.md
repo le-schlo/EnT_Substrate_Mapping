@@ -12,7 +12,6 @@ This repository contains the code for the creation and prediction of the virtual
 For installation run
 ```
 git clone --recurse-submodules https://github.com/le-schlo/EnT_Substrate_Mapping.git
-git submodule update --init --recursive
 
 pip install -r requirements.txt
 
