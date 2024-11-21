@@ -16,7 +16,7 @@ from dash import dcc
 
 ring_class = 'thiophene'
 substitution = 'monosubstituted'
-representation = 'MACCS+ECFP'
+representation = 'ECFP' # Available options are ECFP, MACCS, MACCS+ECFP
 
 home_dir = '/path/to/project_directory/'
 
