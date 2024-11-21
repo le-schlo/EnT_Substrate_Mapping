@@ -11,13 +11,13 @@ from EasyChemML.Model.impl_Pytorch.Models.BERT.FP2MOL_BERT_Trans import FP2MOL_B
 
 from rdkit import Chem
 
-home_dir = '/tmp/EnT_Substrate_Mapping/'
+home_dir = '/path/to/project_directory/'
 ring_class = 'thiophene'
 substitution = 'monosubstituted'
-heterocycle_pattern = Chem.MolFromSmiles('o1cccc1')
+heterocycle_pattern = Chem.MolFromSmiles('s1cccc1')
 
 file_path = home_dir + f'Data/virtual_libraries/{ring_class}_{substitution}.csv'
-path_to_model = home_dir + 'Predictors/spin_population/spin_population.pt'
+path_to_model = home_dir + 'Models/spin_population/spin_population.pt'
 path_for_predictions = home_dir + f'Data/sp_predictions/predictions_{ring_class}_{substitution}.csv'
 
 # ----------------------------------- Data Preprocessing -----------------------
