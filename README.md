@@ -1,4 +1,4 @@
-# Accelerated Discovery in Dearomative Energy Transfer Catalysis through Data-Guided Reaction Screening
+# Substrate mapping for energy transfer catalysis
 
 This repository contains the code for the creation and prediction of the virtual chemical space for the dearomative cycloaddition to heterocycles as described in this paper: TBA
 
