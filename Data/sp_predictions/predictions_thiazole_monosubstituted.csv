@@ -1,0 +1,94 @@
+Predicted_smiles,Predicted_SD_string,DensityArray,True_smiles,Reconstrunction_error
+Sc1nccs1,S_3_c_4_1n_3_c_1_c_4_s_3_1,[3 4 3 1 4 3],Sc1nccs1,0
+Oc1nccs1,O_2_c_4_1n_2_c_2_c_4_s_3_1,[2 4 2 2 4 3],Oc1nccs1,0
+CN(C)C(=O)c1nccs1,C_1_N_1_(C_1_)C_1_(=O_2_)c_4_1n_2_c_2_c_4_s_2_1,[1 1 1 1 2 4 2 2 4 2],CN(C)C(=O)c1nccs1,0
+Fc1cncs1,F_2_c_5_1c_4_n_1_c_4_s_2_1,[2 5 4 1 4 2],Fc1cncs1,0
+O=C(c1ccccc1)c1nccs1,O_3_=C_1_(c_1_1c_1_c_1_c_1_c_1_c_1_1)c_4_1n_2_c_2_c_4_s_2_1,[3 1 1 1 1 1 1 1 4 2 2 4 2],O=C(c1ccccc1)c1nccs1,0
+CNC(=O)c1nccs1,C_1_N_2_C_1_(=O_2_)c_4_1n_2_c_2_c_4_s_2_1,[1 2 1 2 4 2 2 4 2],CNC(=O)c1nccs1,0
+CSC(=O)c1cscn1,C_1_S_1_C_1_(=O_2_)c_4_1c_5_s_2_c_4_n_1_1,[1 1 1 2 4 5 2 4 1],CSC(=O)c1cscn1,0
+COC(=O)c1cscn1,C_1_O_1_C_1_(=O_2_)c_4_1c_5_s_2_c_4_n_1_1,[1 1 1 2 4 5 2 4 1],COC(=O)c1cscn1,0
+N#Cc1cncs1,N_3_#C_1_c_4_1c_4_n_1_c_4_s_2_1,[3 1 4 4 1 4 2],N#Cc1cncs1,0
+CSc1nccs1,C_1_S_3_c_4_1n_3_c_1_c_4_s_3_1,[1 3 4 3 1 4 3],CSc1nccs1,0
+c1ccc(-c2cncs2)cc1,c_3_1c_1_c_3_c_1_(-c_4_2c_4_n_1_c_4_s_2_2)c_3_c_1_1,[3 1 3 1 4 4 1 4 2 3 1],c1ccc(-c2cncs2)cc1,0
+COC(=O)c1nccs1,C_1_O_1_C_1_(=O_2_)c_4_1n_2_c_2_c_4_s_2_1,[1 1 1 2 4 2 2 4 2],COC(=O)c1nccs1,0
+CN(C)C(=O)c1cncs1,C_1_N_1_(C_1_)C_1_(=O_2_)c_4_1c_4_n_1_c_4_s_2_1,[1 1 1 1 2 4 4 1 4 2],CN(C)C(=O)c1cncs1,0
+O=C(O)c1cncs1,O_2_=C_1_(O_1_)c_4_1c_4_n_1_c_4_s_3_1,[2 1 1 4 4 1 4 3],O=C(O)c1cncs1,0
+CNS(=O)(=O)c1cncs1,C_1_N_1_S_1_(=O_1_)(=O_1_)c_4_1c_4_n_1_c_4_s_2_1,[1 1 1 1 1 4 4 1 4 2],CNS(=O)(=O)c1cncs1,0
+CNS(=O)(=O)c1nccs1,C_1_N_1_S_1_(=O_1_)(=O_1_)c_4_1n_2_c_2_c_4_s_2_1,[1 1 1 1 1 4 2 2 4 2],CNS(=O)(=O)c1nccs1,0
+CC(=O)c1nccs1,C_1_C_1_(=O_3_)c_4_1n_2_c_2_c_4_s_2_1,[1 1 3 4 2 2 4 2],CC(=O)c1nccs1,0
+c1ccc(Cc2nccs2)cc1,c_1_1c_1_c_1_c_1_(C_1_c_5_2n_2_c_2_c_4_s_2_2)c_1_c_1_1,[1 1 1 1 1 5 2 2 4 2 1 1],c1ccc(Cc2nccs2)cc1,0
+CC(=O)Oc1nccs1,C_1_C_1_(=O_1_)O_1_c_5_1n_2_c_2_c_4_s_3_1,[1 1 1 1 5 2 2 4 3],CC(=O)Oc1nccs1,0
+CNS(=O)(=O)c1cscn1,C_1_N_1_S_1_(=O_1_)(=O_1_)c_1_1c_4_s_2_c_5_n_1_1,[1 1 1 1 1 1 4 2 5 1],CNS(=O)(=O)c1cscn1,0
+O=C(Cl)c1nccs1,O_3_=C_1_(Cl_1_)c_4_1n_2_c_2_c_4_s_2_1,[3 1 1 4 2 2 4 2],O=C(Cl)c1nccs1,0
+FC(F)(F)c1nccs1,F_1_C_1_(F_1_)(F_1_)c_4_1n_2_c_2_c_4_s_2_1,[1 1 1 1 4 2 2 4 2],FC(F)(F)c1nccs1,0
+c1ccc(Cc2cncs2)cc1,c_1_1c_1_c_1_c_1_(C_1_c_5_2c_4_n_1_c_4_s_2_2)c_1_c_1_1,[1 1 1 1 1 5 4 1 4 2 1 1],c1ccc(Cc2cncs2)cc1,0
+Cc1cscn1,C_1_c_3_1c_4_s_2_c_5_n_1_1,[1 3 4 2 5 1],Cc1cscn1,0
+c1ccc(-c2nccs2)cc1,c_3_1c_1_c_3_c_1_(-c_4_2n_2_c_1_c_4_s_2_2)c_3_c_1_1,[3 1 3 1 4 2 1 4 2 3 1],c1ccc(-c2nccs2)cc1,0
+Fc1cscn1,F_1_c_2_1c_4_s_2_c_5_n_1_1,[1 2 4 2 5 1],Fc1cscn1,0
+COC(=O)c1ccc(-c2cncs2)cc1,C_1_O_1_C_1_(=O_2_)c_3_1c_1_c_3_c_1_(-c_3_2c_4_n_1_c_4_s_2_2)c_3_c_1_1,[1 1 1 2 3 1 3 1 3 4 1 4 2 3 1],COC(=O)c1ccc(-c2cncs2)cc1,0
+N#Cc1cscn1,N_3_#C_1_c_4_1c_5_s_2_c_4_n_1_1,[3 1 4 5 2 4 1],N#Cc1cscn1,0
+CS(=O)(=O)c1nccs1,C_1_S_1_(=O_1_)(=O_1_)c_4_1n_2_c_2_c_4_s_2_1,[1 1 1 1 4 2 2 4 2],CS(=O)(=O)c1nccs1,0
+O=C(Cl)c1cscn1,O_3_=C_1_(Cl_1_)c_4_1c_5_s_2_c_4_n_1_1,[3 1 1 4 5 2 4 1],O=C(Cl)c1cscn1,0
+c1nc(C2CCCCC2)cs1,c_5_1n_1_c_3_(C_1_2C_1_C_1_C_1_C_1_C_1_2)c_4_s_2_1,[5 1 3 1 1 1 1 1 1 4 2],c1nc(C2CCCCC2)cs1,0
+c1csc(C2CCCCC2)n1,c_2_1c_4_s_2_c_5_(C_1_2C_1_C_1_C_1_C_1_C_1_2)n_2_1,[2 4 2 5 1 1 1 1 1 1 2],c1csc(C2CCCCC2)n1,0
+CNC(=O)c1cscn1,C_1_N_1_C_1_(=O_1_)c_4_1c_5_s_2_c_4_n_1_1,[1 1 1 1 4 5 2 4 1],CNC(=O)c1cscn1,0
+Clc1ccc(-c2cncs2)cc1,Cl_1_c_4_1c_1_c_3_c_1_(-c_3_2c_4_n_1_c_4_s_2_2)c_3_c_1_1,[1 4 1 3 1 3 4 1 4 2 3 1],Clc1ccc(-c2cncs2)cc1,0
+COC(=O)c1ccc(-c2nccs2)cc1,C_1_O_1_C_1_(=O_1_)c_3_1c_1_c_3_c_1_(-c_4_2n_2_c_1_c_4_s_2_2)c_3_c_1_1,[1 1 1 1 3 1 3 1 4 2 1 4 2 3 1],COC(=O)c1ccc(-c2nccs2)cc1,0
+c1cc(-c2nccs2)ccn1,c_1_1c_3_c_1_(-c_4_2n_2_c_1_c_4_s_2_2)c_3_c_1_n_3_1,[1 3 1 4 2 1 4 2 3 1 3],c1cc(-c2nccs2)ccn1,0
+c1ccc(Cc2cscn2)cc1,c_1_1c_1_c_1_c_1_(C_1_c_3_2c_4_s_2_c_5_n_1_2)c_1_c_1_1,[1 1 1 1 1 3 4 2 5 1 1 1],c1ccc(Cc2cscn2)cc1,0
+c1ccc(-c2cscn2)cc1,c_3_1c_1_c_3_c_1_(-c_4_2c_4_s_2_c_4_n_1_2)c_3_c_1_1,[3 1 3 1 4 4 2 4 1 3 1],c1ccc(-c2cscn2)cc1,0
+Sc1cncs1,S_2_c_4_1c_4_n_1_c_4_s_2_1,[2 4 4 1 4 2],Sc1cncs1,0
+c1ncc(C2CCCCC2)s1,c_5_1n_2_c_2_c_4_(C_1_2C_1_C_1_C_1_C_1_C_1_2)s_2_1,[5 2 2 4 1 1 1 1 1 1 2],c1ncc(C2CCCCC2)s1,0
+Cc1nccs1,C_1_c_5_1n_2_c_2_c_4_s_3_1,[1 5 2 2 4 3],Cc1nccs1,0
+COc1nccs1,C_1_O_2_c_4_1n_2_c_2_c_4_s_3_1,[1 2 4 2 2 4 3],COc1nccs1,0
+O=Cc1cncs1,O_3_=C_1_c_4_1c_4_n_1_c_4_s_2_1,[3 1 4 4 1 4 2],O=Cc1cncs1,0
+Clc1ccc(-c2nccs2)cc1,Cl_1_c_3_1c_1_c_3_c_1_(-c_4_2n_2_c_1_c_4_s_2_2)c_3_c_1_1,[1 3 1 3 1 4 2 1 4 2 3 1],Clc1ccc(-c2nccs2)cc1,0
+Brc1cscn1,Br_1_c_3_1c_4_s_2_c_5_n_1_1,[1 3 4 2 5 1],Brc1cscn1,0
+Oc1cscn1,O_2_c_3_1c_4_s_3_c_5_n_1_1,[2 3 4 3 5 1],Oc1cscn1,0
+FC(F)(F)c1cncs1,F_1_C_1_(F_1_)(F_1_)c_4_1c_3_n_1_c_5_s_2_1,[1 1 1 1 4 3 1 5 2],FC(F)(F)c1cncs1,0
+CSc1cscn1,C_1_S_2_c_3_1c_4_s_2_c_5_n_1_1,[1 2 3 4 2 5 1],CSc1cscn1,0
+O=C(O)c1cscn1,O_2_=C_1_(O_1_)c_4_1c_5_s_2_c_4_n_1_1,[2 1 1 4 5 2 4 1],O=C(O)c1cscn1,0
+CC(=O)Nc1cscn1,C_1_C_1_(=O_1_)N_1_c_3_1c_4_s_3_c_5_n_1_1,[1 1 1 1 3 4 3 5 1],CC(=O)Nc1cscn1,0
+Clc1cscn1,Cl_1_c_3_1c_4_s_2_c_5_n_1_1,[1 3 4 2 5 1],Clc1cscn1,0
+CSC(=O)c1cncs1,C_1_S_4_C_3_(=O_4_)c_1_1c_3_n_1_c_3_s_1_1,[1 4 3 4 1 3 1 3 1],CSC(=O)c1cncs1,0
+CN(C)C(=O)c1cscn1,C_1_N_1_(C_1_)C_1_(=O_1_)c_4_1c_5_s_2_c_4_n_1_1,[1 1 1 1 1 4 5 2 4 1],CN(C)C(=O)c1cscn1,0
+CC1(C)OB(c2cncs2)OC1(C)C,C_1_C_1_1(C_1_)O_1_B_1_(c_4_2c_4_n_1_c_4_s_3_2)O_1_C_1_1(C_1_)C_1_,[1 1 1 1 1 4 4 1 4 3 1 1 1 1],CC1(C)OB(c2cncs2)OC1(C)C,0
+CS(=O)(=O)c1cncs1,C_1_S_1_(=O_1_)(=O_1_)c_4_1c_4_n_1_c_4_s_2_1,[1 1 1 1 4 4 1 4 2],CS(=O)(=O)c1cncs1,0
+Clc1ccc(-c2cscn2)cc1,Cl_1_c_3_1c_1_c_3_c_1_(-c_4_2c_4_s_2_c_3_n_1_2)c_3_c_1_1,[1 3 1 3 1 4 4 2 3 1 3 1],Clc1ccc(-c2cscn2)cc1,0
+CSc1cncs1,C_1_S_3_c_4_1c_4_n_1_c_4_s_2_1,[1 3 4 4 1 4 2],CSc1cncs1,0
+c1cc(-c2cscn2)ccn1,c_1_1c_3_c_1_(-c_4_2c_4_s_2_c_4_n_1_2)c_3_c_1_n_3_1,[1 3 1 4 4 2 4 1 3 1 3],c1cc(-c2cscn2)ccn1,0
+COc1ccc(-c2nccs2)cc1,C_1_O_1_c_3_1c_1_c_3_c_1_(-c_4_2n_2_c_1_c_4_s_2_2)c_3_c_1_1,[1 1 3 1 3 1 4 2 1 4 2 3 1],COc1ccc(-c2nccs2)cc1,0
+Fc1nccs1,F_2_c_5_1n_2_c_2_c_4_s_2_1,[2 5 2 2 4 2],Fc1nccs1,0
+COc1ccc(-c2cscn2)cc1,C_1_O_1_c_3_1c_1_c_2_c_1_(-c_4_2c_5_s_2_c_4_n_1_2)c_3_c_1_1,[1 1 3 1 2 1 4 5 2 4 1 3 1],COc1ccc(-c2cscn2)cc1,0
+CC(=O)Oc1cncs1,C_1_C_1_(=O_1_)O_1_c_4_1c_3_n_1_c_5_s_2_1,[1 1 1 1 4 3 1 5 2],CC(=O)Oc1cncs1,0
+CC1(C)OB(c2nccs2)OC1(C)C,C_1_C_1_1(C_1_)O_1_B_1_(c_4_2n_2_c_2_c_4_s_2_2)O_1_C_1_1(C_1_)C_1_,[1 1 1 1 1 4 2 2 4 2 1 1 1 1],CC1(C)OB(c2nccs2)OC1(C)C,0
+COc1ccc(-c2cncs2)cc1,C_1_O_1_c_3_1c_1_c_3_c_1_(-c_3_2c_4_n_1_c_4_s_2_2)c_3_c_1_1,[1 1 3 1 3 1 3 4 1 4 2 3 1],COc1ccc(-c2cncs2)cc1,0
+c1cc(-c2cncs2)ccn1,c_1_1c_3_c_1_(-c_4_2c_4_n_1_c_4_s_2_2)c_3_c_1_n_3_1,[1 3 1 4 4 1 4 2 3 1 3],c1cc(-c2cncs2)ccn1,0
+COc1cncs1,C_1_O_2_c_3_1c_2_n_2_c_5_s_2_1,[1 2 3 2 2 5 2],COc1cncs1,0
+COC(=O)c1cncs1,C_1_O_1_C_1_(=O_2_)c_4_1c_4_n_1_c_4_s_3_1,[1 1 1 2 4 4 1 4 3],COC(=O)c1cncs1,0
+Clc1nccs1,Cl_2_c_5_1n_3_c_1_c_4_s_3_1,[2 5 3 1 4 3],Clc1nccs1,0
+Sc1cscn1,S_2_c_3_1c_4_s_2_c_5_n_1_1,[2 3 4 2 5 1],Sc1cscn1,0
+O=C(c1ccccc1)c1cncs1,O_3_=C_1_(c_1_1c_1_c_1_c_1_c_1_c_1_1)c_4_1c_4_n_1_c_4_s_2_1,[3 1 1 1 1 1 1 1 4 4 1 4 2],O=C(c1ccccc1)c1cncs1,0
+CC(=O)c1cncs1,C_1_C_1_(=O_3_)c_4_1c_4_n_1_c_4_s_2_1,[1 1 3 4 4 1 4 2],CC(=O)c1cncs1,0
+FC(F)(F)c1cscn1,F_1_C_1_(F_1_)(F_1_)c_3_1c_4_s_2_c_5_n_2_1,[1 1 1 1 3 4 2 5 2],FC(F)(F)c1cscn1,0
+CC(=O)Nc1nccs1,C_1_C_1_(=O_1_)N_1_c_4_1n_2_c_2_c_4_s_3_1,[1 1 1 1 4 2 2 4 3],CC(=O)Nc1nccs1,0
+CS(=O)(=O)c1cscn1,C_1_S_1_(=O_1_)(=O_1_)c_1_1c_4_s_2_c_5_n_2_1,[1 1 1 1 1 4 2 5 2],CS(=O)(=O)c1cscn1,0
+O=Cc1nccs1,O_3_=C_1_c_4_1n_2_c_2_c_4_s_2_1,[3 1 4 2 2 4 2],O=Cc1nccs1,0
+Clc1cncs1,Cl_2_c_4_1c_4_n_1_c_4_s_2_1,[2 4 4 1 4 2],Clc1cncs1,0
+COC(=O)c1ccc(-c2cscn2)cc1,C_1_O_1_C_1_(=O_2_)c_4_1c_1_c_3_c_2_(-c_3_2c_4_s_2_c_3_n_1_2)c_3_c_1_1,[1 1 1 2 4 1 3 2 3 4 2 3 1 3 1],COC(=O)c1ccc(-c2cscn2)cc1,0
+CC(=O)Nc1cncs1,C_1_C_1_(=O_1_)N_2_c_4_1c_4_n_1_c_4_s_2_1,[1 1 1 2 4 4 1 4 2],CC(=O)Nc1cncs1,0
+O=Cc1cscn1,O_3_=C_1_c_4_1c_5_s_2_c_4_n_1_1,[3 1 4 5 2 4 1],O=Cc1cscn1,0
+CSC(=O)c1nccs1,C_1_S_1_C_1_(=O_3_)c_4_1n_2_c_2_c_4_s_2_1,[1 1 1 3 4 2 2 4 2],CSC(=O)c1nccs1,0
+O=C(Cl)c1cncs1,O_3_=C_1_(Cl_1_)c_4_1c_4_n_1_c_4_s_3_1,[3 1 1 4 4 1 4 3],O=C(Cl)c1cncs1,0
+COc1cscn1,C_1_O_2_c_3_1c_4_s_2_c_5_n_1_1,[1 2 3 4 2 5 1],COc1cscn1,0
+CC1(C)OB(c2cscn2)OC1(C)C,C_1_C_1_1(C_1_)O_1_B_1_(c_4_2c_5_s_2_c_4_n_1_2)O_1_C_1_1(C_1_)C_1_,[1 1 1 1 1 4 5 2 4 1 1 1 1 1],CC1(C)OB(c2cscn2)OC1(C)C,0
+Brc1cncs1,Br_3_c_4_1c_4_n_1_c_4_s_2_1,[3 4 4 1 4 2],Brc1cncs1,0
+O=C(c1ccccc1)c1cscn1,O_5_=C_4_(c_1_1c_2_c_1_c_2_c_1_c_2_1)c_1_1c_3_s_1_c_1_n_1_1,[5 4 1 2 1 2 1 2 1 3 1 1 1],O=C(c1ccccc1)c1cscn1,0
+N#Cc1nccs1,N_3_#C_1_c_4_1n_2_c_2_c_4_s_2_1,[3 1 4 2 2 4 2],N#Cc1nccs1,0
+Brc1nccs1,Br_3_c_4_1n_3_c_1_c_4_s_2_1,[3 4 3 1 4 2],Brc1nccs1,0
+Oc1cncs1,O_2_c_4_1c_2_n_2_c_5_s_2_1,[2 4 2 2 5 2],Oc1cncs1,0
+CC(=O)Oc1cscn1,C_1_C_1_(=O_1_)O_1_c_3_1c_4_s_3_c_5_n_1_1,[1 1 1 1 3 4 3 5 1],CC(=O)Oc1cscn1,0
+CC(=O)c1cscn1,C_1_C_1_(=O_3_)c_4_1c_5_s_2_c_4_n_1_1,[1 1 3 4 5 2 4 1],CC(=O)c1cscn1,0
+CNC(=O)c1cncs1,C_1_N_1_C_1_(=O_2_)c_4_1c_4_n_1_c_4_s_2_1,[1 1 1 2 4 4 1 4 2],CNC(=O)c1cncs1,0
+O=C(O)c1nccs1,O_2_=C_1_(O_1_)c_4_1n_2_c_2_c_4_s_2_1,[2 1 1 4 2 2 4 2],O=C(O)c1nccs1,0
+Cc1cncs1,C_1_c_4_1c_2_n_2_c_5_s_2_1,[1 4 2 2 5 2],Cc1cncs1,0
