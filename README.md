@@ -19,6 +19,7 @@ pip install -r requirements.txt
 cd EnTdecker/EasyChemML
 pip install ./
 ```
+The installation on a standard Linux machine takes approx. 2-3 minutes.
 
 ## Usage
 The scripts to run the different parts of the workflow are located in the `examples` directory.
@@ -47,8 +48,9 @@ A typical workflow would involve the following steps:
    - The parameters for the dimensionality reduction with _UMAP_ can be adjusted:
      - `n_neighbors` default is 60. 
      - `min_dist` default is 0.15.
-     - `metric` default is `euclidean`. 
+     - `metric` default is `euclidean`.
 
+A typical run time for a substrate space with ~1000 molecules is approx. 3-5 minutes when using GPU support, and 10-15 minutes when run on CPU only.
 ## Citation
 ```
 @article{TBA}
