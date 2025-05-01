@@ -54,6 +54,9 @@ A typical workflow would involve the following steps:
      - `metric` default is `euclidean`.
 
 A typical run time for a substrate space with ~1000 molecules is approx. 3-5 minutes when using GPU support, and 10-15 minutes when run on CPU only.
+
+We provide an exemplary workflow as a jupyter notebook [a link](https://github.com/le-schlo/EnT_Substrate_Mapping/blob/main/examples/full_workflow.ipynb)
+
 ## Citation
 ```
 @article{TBA}
