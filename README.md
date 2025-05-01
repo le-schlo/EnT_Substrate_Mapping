@@ -18,6 +18,9 @@ pip install -r requirements.txt
 #Additionally you need to go to the EasyChemML directory and install the necessary dependencies separately.
 cd EnTdecker/EasyChemML
 pip install ./
+
+cd ../../
+pip install -r requirements.txt
 ```
 The installation on a standard Linux machine takes approx. 2-3 minutes.
 
