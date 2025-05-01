@@ -40,7 +40,7 @@ A typical workflow would involve the following steps:
    - This script will create images. The user has two options controllable with the `type_of_image` variable
      - `structure`: The images will be the structures of the molecules generated with RDKit
      - `spin_population`: The images will be a heat map of predicted spin population of the molecules
-     - The images should be saved to the `Data/images/idx.jpeg` Where `idx` is the index of the molecule in the virtual library. A dummy image named `default.png` is provided in the `Data/images` directory if no image for the molecule was created.
+     - The images should be saved to the `Data/images/ring_class_substitution/idx.jpeg` Where `ring_class` is the name you used to create the space and substitution the degree of substitution, `idx` is the index of the molecule in the virtual library. A dummy image named `default.png` is provided in the `Data/images` directory if no image for the molecule was created.
 <br/><br/>
 4. Run the interactive analysis: `examples/interactive_analysis.py`
    - Using the previously generated files an interactive 3D plot can be generated.
