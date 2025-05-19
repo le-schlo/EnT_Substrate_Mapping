@@ -11,8 +11,8 @@ threshold = 62
 
 home_dir = '/path/to/project_directory/'
 
-path_to_et_datafile = fr'Data/et_predictions/predictions_{ring_class}_{substitution}.csv'
-path_to_sp_datafile = fr'Data/sp_predictions/predictions_{ring_class}_{substitution}.csv'
+path_to_et_datafile = home_dir + fr'Data/et_predictions/predictions_{ring_class}_{substitution}.csv'
+path_to_sp_datafile = home_dir + fr'Data/sp_predictions/predictions_{ring_class}_{substitution}.csv'
 path_to_save_candidates = home_dir + f'Data/potential_candidates_{ring_class}_{substitution}.csv'
 
 #--------------Load the data, and check if the maximum spin density is located on the core-------------------#
