@@ -58,8 +58,11 @@ A typical workflow would involve the following steps:
    - The threshold for triplet energy values can be set with the `threshold` variable (default: 62 kcal/mol)
    - The `core_smiles` can be defined and only molecules with a spin population located on this core will pass the screening
    - The list of structures that pass both filters are saved in `Data/potential_candidates_{ring_class}_{substitution}.csv`
+   - 
 A typical run time for a substrate space with ~1000 molecules is approx. 3-5 minutes when using GPU support, and 10-15 minutes when run on CPU only.
+
 We provide an exemplary workflow as a jupyter notebook [here](https://github.com/le-schlo/EnT_Substrate_Mapping/blob/main/examples/full_workflow.ipynb)
+
 Moreover, a jupyter notebook can be run without a local installation on google colab using this [link](https://drive.google.com/file/d/1RWFUu8bj4jDW2r-UAQI4bclE8cm0ChO-/view?usp=sharing)
 
 ## Citation
