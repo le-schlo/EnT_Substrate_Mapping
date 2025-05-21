@@ -42,7 +42,7 @@ A typical workflow would involve the following steps:
      - `spin_population`: The images will be a heat map of predicted spin population of the molecules
      - The images should be saved to the `Data/images/ring_class_substitution/idx.jpeg` Where `ring_class` is the name you used to create the space and substitution the degree of substitution, `idx` is the index of the molecule in the virtual library. A dummy image named `default.png` is provided in the `Data/images` directory if no image for the molecule was created.
 <br/><br/>
-4. Run the interactive analysis: `examples/interactive_analysis.py`
+4A. Run the interactive analysis: `examples/interactive_analysis.py`
    - Using the previously generated files an interactive 3D plot can be generated.
    - The representation of the molecules can be chosen with the `representation` variable:
      - `ECFP`: The molecules are represented by their ECFP fingerprints generated with RDKit
@@ -52,7 +52,14 @@ A typical workflow would involve the following steps:
      - `n_neighbors` default is 60. 
      - `min_dist` default is 0.15.
      - `metric` default is `euclidean`.
-
+     - 
+<br/><br/>
+4B. Alternatively run an automated analysis: `examples/automated_analysis.py`
+   - Using the previously generated data the virtual libraries can be screened for promising candidates (e.g., molecules below a triplet energy threshold and with the spin population located on a defined core substructure)
+   - The threshold for triplet energy values can be set with the `threshold` variable (default: 62 kcal/mol)
+   - The `core_smiles` can be defined and only molecules with a spin population located on this core will pass the screening
+   - The list of structures that pass both filters are saved in `Data/potential_candidates_{ring_class}_{substitution}.csv`
+     
 A typical run time for a substrate space with ~1000 molecules is approx. 3-5 minutes when using GPU support, and 10-15 minutes when run on CPU only.
 
 We provide an exemplary workflow as a jupyter notebook [here](https://github.com/le-schlo/EnT_Substrate_Mapping/blob/main/examples/full_workflow.ipynb)
