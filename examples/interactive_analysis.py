@@ -20,7 +20,7 @@ representation = 'ECFP' # Available options are ECFP, MACCS, MACCS+ECFP
 
 home_dir = '/path/to/project_directory/'
 
-picFolder_path = home_dir + 'Data/images/{ring_class}_{substitution}' #Important: The names of the files in the folder must be the index of the molecules in the data_path!
+picFolder_path = home_dir + f'Data/images/{ring_class}_{substitution}' #Important: The names of the files in the folder must be the index of the molecules in the data_path!
 data_path = home_dir + f'Data/virtual_libraries/{ring_class}_{substitution}.csv'
 e_t_path = home_dir + f'Data/et_predictions/predictions_{ring_class}_{substitution}.csv'
 
