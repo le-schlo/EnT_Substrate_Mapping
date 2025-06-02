@@ -12,7 +12,7 @@ This repository contains the code for the creation and prediction of the virtual
 For installation run
 ```
 git clone --recurse-submodules https://github.com/le-schlo/EnT_Substrate_Mapping.git
-
+cd EnT_Substrate_Mapping/
 pip install -r requirements.txt
 
 #Additionally you need to go to the EasyChemML directory and install the necessary dependencies separately.
