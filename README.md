@@ -1,6 +1,6 @@
 # Substrate mapping for energy transfer catalysis
 
-This repository contains the code for the creation and prediction of the virtual chemical space for the dearomative cycloaddition to heterocycles as described in this paper: TBA
+This repository contains the code for the creation and prediction of the virtual chemical space for the dearomative cycloaddition to heterocycles as described in this [paper](https://doi.org/10.1021/jacs.5c09249)
 
 <!---
 <p align="center">
@@ -69,5 +69,17 @@ Moreover, a jupyter notebook can be run without a local installation on google c
 
 ## Citation
 ```
-@article{TBA}
+@article{doi:10.1021/jacs.5c09249,
+author = {Rana, Debanjan and H{\"u}mpel, Carla and Laskar, Ranjini and Schlosser, Leon and Korgitzsch, Sophie and Dutta, Subhabrata and Daniliuc, Constantin G. and Glorius, Frank},
+title = {Accelerated Discovery of Energy Transfer-Catalyzed Dearomative Cycloadditions through a Data-Driven Three-Layer Screening Strategy},
+journal = {Journal of the American Chemical Society},
+volume = {147},
+number = {31},
+pages = {28359-28369},
+year = {2025},
+doi = {10.1021/jacs.5c09249},
+note ={PMID: 40700715},
+URL = {https://doi.org/10.1021/jacs.5c09249},
+eprint = {https://doi.org/10.1021/jacs.5c09249}
+}
 ```
