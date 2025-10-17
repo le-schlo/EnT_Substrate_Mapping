@@ -3,7 +3,7 @@
 This repository contains the code for the creation and prediction of the virtual chemical space for the dearomative cycloaddition to heterocycles as described in this [paper](https://doi.org/10.1021/jacs.5c09249)
 
 <p align="center">
-<img src="TOC.jpeg" width="60%" />
+<img src="TOC.jpeg" width="80%" />
 </p>
 
 
