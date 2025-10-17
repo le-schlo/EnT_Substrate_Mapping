@@ -4,7 +4,7 @@ This repository contains the code for the creation and prediction of the virtual
 
 <!---
 <p align="center">
-<img src="TOC.png" width="60%" />
+<img src="TOC.jpeg" width="60%" />
 </p>
 -->
 
